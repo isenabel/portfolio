@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- *********** -->
+    <meta name="ad.size" content="width=120,height=600" />
+    <!-- *********** -->
+
+    <link href="simplebar.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      var clickTag =
+        "";
+      var labelTag = "";
+
+      function exithandler() {
+        // if (clickTag.substring(0, 4) == "http") {
+        //   window.open(clickTag);
+        // }
+      }
+
+      function exitLabel() {
+        // if (labelTag.substring(0, 4) == "http") {
+        //   window.open(labelTag);
+        // }
+      }
+    </script>
+    <title>Banner</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <img id="background" src="images/background.jpg" alt="" />
+      <div id="background2" class="cover"></div>
+      <div id="package" class="cover"></div>
+      <div id="pill" class="cover"></div>
+      <!-- Triangles -->
+      <div id="triangles_container">
+        <svg viewBox="0 0 500 250" id="topleft">
+          <rect
+            width="100%"
+            height="100%"
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            fill="rgba(0,132,61,0.9)"
+          />
+        </svg>
+        <svg viewBox="0 0 500 250" id="topright">
+          <rect
+            width="100%"
+            height="100%"
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            fill="rgba(120,190,32,0.8)"
+          />
+        </svg>
+        <svg viewBox="0 0 500 250" id="bottomleft">
+          <rect
+            width="100%"
+            height="100%"
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            fill="rgba(0,132,61,0.9)"
+          />
+        </svg>
+        <svg viewBox="0 0 500 250" id="bottomright">
+          <rect
+            width="100%"
+            height="100%"
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            fill="rgba(120,190,32,0.8)"
+          />
+        </svg>
+      </div>
+      <!-- Triangles -->
+      <div id="logo" class="cover"></div>
+      <div id="copy1" class="cover"></div>
+      <div id="copy2" class="cover"></div>
+      <div id="copy3" class="cover"></div>
+      <div id="copy4" class="cover"></div>
+      <div id="copy5" class="cover"></div>
+      <div id="logofinal" class="cover"></div>
+      <div id="cta" class="cover"></div>
+      <!--  Scroll  -->
+      <div id="scrollHolder">
+        <div id="scrollText">
+          <h1>Indications and Important Safety Information</h1>
+          <h2>Indications</h2>
+          <p>
+            Credelio CAT kills adult fleas and is indicated for the treatment
+            and prevention of flea infestations for one month in cats and
+            kittens 8 weeks of age and older and weighing 2 pounds or greater.
+          </p>
+          <p>
+            Credelio CAT is also indicated for treatment and control of
+            black-legged tick infestations for one month in cats and kittens 6
+            months of age and older and weighing 2 pounds or greater.
+          </p>
+          <h2>Important Safety Information</h2>
+          <p>
+            Lotilaner is a member of the isoxazoline class of drugs. This class
+            has been associated with neurologic adverse reactions including
+            tremors, incoordination, and seizures. Neurologic adverse reactions
+            have been reported in cats receiving isoxazoline class drugs, even
+            in cats without a history of neurologic disorders. Use with caution
+            in cats with a history of neurologic disorders. The safety of
+            Credelio CAT has not been established in breeding, pregnant and
+            lactating cats. The effectiveness of Credelio CAT against
+            black-legged ticks in kittens less than 6 months of age has not been
+            evaluated. The most frequently reported adverse reactions are weight
+            loss, rapid breathing and vomiting. For complete safety information,
+            please see Credelio CAT
+            <a id="link1" href="#" onclick="exitLabel();return false;">product label</a>  or ask your veterinarian.
+          </p>
+          <p>Credelio is a trademark of Elanco or its affiliates.</p>
+          <p></p>
+          <p>&copy; 2024 Elanco or its affiliates.</p>
+          <p>PM-US-21-1347</p>
+        </div>
+        <div id="line"></div>
+      </div>
+      <!--BORDER-->
+      <div class="borderTop border"></div>
+      <div class="borderLeft border"></div>
+      <div class="borderRight border"></div>
+      <div class="borderBottom border"></div>
+      <a id="exit" href="#" onclick="exithandler();return false;"></a>
+    </div>
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/simplebar.min.js"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+  </body>
+</html>

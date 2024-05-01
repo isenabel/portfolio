@@ -1,9 +1,8 @@
 @import url("general.css");
 
-#content {
+#main {
   min-width: 100vw;
   min-height: 100vh;
-  width: 100%;
   max-width: 1920px;
   display: flex;
   flex-direction: column;
@@ -17,7 +16,7 @@
   padding: 0 min(3vw, 20px);
 }
 
-#content header h1 {
+#main header h1 {
   font-size: min(5vw, 24px);
   font-weight: bold;
   text-shadow: 0 0 2px #000;
@@ -44,7 +43,7 @@
   line-height: 1;
   font-weight: bold;
   white-space: nowrap;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--btn-color);
   margin-top: 20px;
   overflow: hidden;
   color: var(--main-text-color);

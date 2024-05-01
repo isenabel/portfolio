@@ -1,5 +1,5 @@
 function init() {
-  document.getElementById('content').style.opacity = 1; 
+  document.getElementById('main').style.opacity = 1; 
 }
 
 

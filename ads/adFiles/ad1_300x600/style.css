@@ -1,0 +1,221 @@
+@charset "UTF-8";
+:root {
+  --border-width: 1px;
+  /* --border-color: #000; */
+}
+
+/* ------------------------------------------------------------ */
+
+/* -----> RESET.CSS INCLUDED HERE TO REDUCE SERVER CALLS <----- */
+
+/* ------------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size-adjust: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  zoom: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------- Reset CSS End -------------------- */
+
+#container {
+  width: 300px;
+  height: 600px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+.content, .content div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mgp {
+  background-image: url("images/mgp.png");
+}
+
+#mgp_small {
+  background-image: url("images/mgp_small.png");
+}
+
+#headline {
+  background-image: url("images/headline.png");
+}
+
+#headline2 {
+  background-image: url("images/headline2.png");
+}
+
+#b_w {
+  background-image: url("images/b&w.png");
+  width: 130%;
+  right: 0;
+  left: unset;
+}
+
+#color {
+  background-image: url("images/color.png");
+}
+
+#note1 {
+  background-image: url("images/notes1.png");
+}
+
+#note2 {
+  background-image: url("images/notes2.png");
+}
+
+#note3 {
+  background-image: url("images/notes3.png");
+}
+
+#note4 {
+  background-image: url("images/notes4.png");
+}
+
+#note5 {
+  background-image: url("images/notes5.png");
+}
+
+#note6 {
+  background-image: url("images/notes6.png");
+}
+
+#note7 {
+  background-image: url("images/notes7.png");
+}
+
+#note8 {
+  background-image: url("images/notes8.png");
+}
+
+#note9 {
+  background-image: url("images/notes9.png");
+}
+
+#note10 {
+  background-image: url("images/notes10.png");
+}
+
+#note11 {
+  background-image: url("images/notes11.png");
+}
+
+#note12 {
+  background-image: url("images/notes12.png");
+}
+
+#note13 {
+  background-image: url("images/notes13.png");
+}
+
+#logo {
+  background-image: url("images/logo.png");
+}
+
+#cta {
+  background-image: url("images/cta.png");
+}
+
+#exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* -------------------- */
+
+/* -----> BORDER <----- */
+
+/* -------------------- */
+
+.borderTop {
+  width: 100%;
+  height: var(--border-width);
+  left: 0px;
+  top: 0px;
+}
+
+.borderLeft {
+  width: var(--border-width);
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.borderRight {
+  width: var(--border-width);
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.borderBottom {
+  width: 100%;
+  height: var(--border-width);
+  left: 0px;
+  bottom: 0px;
+}
+
+.border {
+  position: absolute;
+  z-index: 99999;
+  background-color: var(--border-color);
+}

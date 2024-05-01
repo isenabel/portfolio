@@ -1,0 +1,219 @@
+@charset "UTF-8";
+:root {
+  --border-width: 1px;
+  --border-color: #c1c1c1;
+}
+
+/* ------------------------------------------------------------ */
+
+/* -----> RESET.CSS INCLUDED HERE TO REDUCE SERVER CALLS <----- */
+
+/* ------------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size-adjust: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  zoom: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------- Reset CSS End -------------------- */
+
+#container {
+  width: 728px;
+  height: 90px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #f6eee4;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#rectangleTop {
+  background-color: #546b3b;
+  width: 215px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#rectangleBottom {
+  background-color: #f6eee4;
+  width: 282px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  background-image: url("images/logo.png");
+}
+
+#rectangleBottom img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 130px;
+  transform-origin: center bottom;
+}
+
+#rectangleBottom #headline {
+  top: 16px;
+  left: 26px;
+  width: calc(413px / 2);
+}
+
+#copy1 {
+  top: 49px;
+  width: calc(219px / 2);
+}
+
+#copy2 {
+  top: 50px;
+  width: calc(128px / 2);
+  transform: rotateX(90deg);
+}
+
+#copy3 {
+  top: 49px;
+  width: calc(233px / 2);
+  transform: rotateX(90deg);
+}
+
+#copy4 {
+  top: 50px;
+  width: calc(183px / 2);
+  transform: rotateX(90deg);
+}
+
+#copy5 {
+  top: 49px;
+  width: calc(254px / 2);
+  transform: rotateX(90deg);
+}
+
+#cta {
+  background-image: url("images/cta.png");
+  transform-origin: 625px 68px;
+}
+
+#imgCont {
+  width: 232px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 214px;
+  overflow: hidden;
+}
+
+#img {
+  display: block;
+  width: 100%;
+}
+
+#exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 20;
+}
+
+/* -------------------- */
+
+/* -----> BORDER <----- */
+
+/* -------------------- */
+
+.borderTop {
+  width: 100%;
+  height: var(--border-width);
+  left: 0px;
+  top: 0px;
+}
+
+.borderLeft {
+  width: var(--border-width);
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.borderRight {
+  width: var(--border-width);
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.borderBottom {
+  width: 100%;
+  height: var(--border-width);
+  left: 0px;
+  bottom: 0px;
+}
+
+.border {
+  position: absolute;
+  z-index: 99999;
+  background-color: var(--border-color);
+  pointer-events: none;
+}
