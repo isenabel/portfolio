@@ -58,8 +58,19 @@ table {
   --main-text-color: #f1f1f1;
   --main-bg-color: #0f0f0f;
   --btn-color: #5e5e5e;
+  --generalPadding: 20px;
 }
 
 .btnHover:hover {
   filter: brightness(1.1);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--generalPadding);
+  background-color: var(--btn-color);
+  font-size: min(3.4vw, 14px);
+  margin-top: auto;
 }
