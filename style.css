@@ -1,9 +1,6 @@
 @import url("general.css");
 
 #main {
-  min-width: 100vw;
-  min-height: 100vh;
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +10,6 @@
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding: 0 min(3vw, 20px);
 }
 
 #main header h1 {
@@ -35,6 +31,13 @@
   text-shadow: 0 0 2px #000;
 }
 
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
 .adsBtn {
   display: block;
   width: fit-content;
@@ -44,12 +47,81 @@
   font-weight: bold;
   white-space: nowrap;
   background-color: var(--btn-color);
-  margin-top: 20px;
   overflow: hidden;
   color: var(--main-text-color);
   text-decoration: none;
   cursor: pointer;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 0 10px;
   border-radius: 50px;
+}
+
+/* ------- Wesites HTML -------- */
+
+#main.websites {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  background: none;
+  padding: 0;
+}
+
+.websitesCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.websitesCont .links {
+  display: block;
+  text-decoration: none;
+  color: var(--main-text-color);
+  padding: var(--generalPadding);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.links:hover {
+  box-shadow: 0px 1px 0px #c0c0c0;
+}
+
+.links h2 {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 6px;
+  color: #99c3ff;
+}
+
+.links p {
+  color: var(--main-text-color);
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.tags li {
+  display: inline-block;
+  font-size: 12px;
+  color: #bdc1c6;;
+}
+
+.tags li::after {
+  content: "\2022";
+  display: inline-block;
+  font-size: smaller;
+  margin: 0 5px;
+}
+
+.tags li:last-child::after {
+  content: '';
+  display: none;
 }
