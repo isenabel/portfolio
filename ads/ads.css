@@ -15,28 +15,6 @@ header {
   background-color: #272727;
 }
 
-.returnHome {
-  display: block;
-  width: fit-content;
-  padding: 0.7em 1em;
-  font-size: 14px;
-  line-height: 1;
-  font-weight: bold;
-  white-space: nowrap;
-  background-color: var(--btn-color);
-  margin-top: 20px;
-  overflow: hidden;
-  color: var(--main-text-color);
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.returnHome i {
-  font-size: 16px;
-  line-height: 1;
-}
-
 header h1 {
   font-size: 25px;
   line-height: 1;

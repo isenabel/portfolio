@@ -65,19 +65,23 @@
   padding: 0;
 }
 
+.returnHome {
+  margin: 0;
+}
+
 .websitesCont {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: var(--generalPadding);
 }
 
 .websitesCont .links {
   display: block;
   text-decoration: none;
   color: var(--main-text-color);
-  padding: var(--generalPadding);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
