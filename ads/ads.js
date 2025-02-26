@@ -28,8 +28,6 @@ function init() {
 
       iframe.src = `./adFiles/${parentData}/index.html`;
       cover.style.display = 'none';
-
-      console.log(iframe);
     });
   });
 
